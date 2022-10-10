@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a56fc79486a5a4fb9ba137b5f825fa, type: 3}
+  m_Name: Level Controller
+  m_EditorClassIdentifier: 
+  levelValues:
+  - playerWeightsAttributes:
+    - weightValueToPlayer: 32
+      weightSizeToPlayer: 0.32
+      weightColorToPlayer: {r: 1, g: 0.90592486, b: 0, a: 0}
+    - weightValueToPlayer: 50
+      weightSizeToPlayer: 0.635
+      weightColorToPlayer: {r: 0.4433962, g: 0.20705765, b: 0.20705765, a: 0}
+    - weightValueToPlayer: 82
+      weightSizeToPlayer: 0.82
+      weightColorToPlayer: {r: 0.7592945, g: 0, b: 1, a: 0}
+    - weightValueToPlayer: 41
+      weightSizeToPlayer: 0.517
+      weightColorToPlayer: {r: 0.3388934, g: 0, b: 1, a: 0}
+    - weightValueToPlayer: 35
+      weightSizeToPlayer: 0.416
+      weightColorToPlayer: {r: 0, g: 1, b: 0.54687, a: 0}
+    - weightValueToPlayer: 18
+      weightSizeToPlayer: 0.301
+      weightColorToPlayer: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 0}
+    - weightValueToPlayer: 10
+      weightSizeToPlayer: 0.2
+      weightColorToPlayer: {r: 1, g: 0, b: 0, a: 0}
+    stageWeightAttributes:
+      weightValueToSolve: 99
+      weightSizeToSolve: 1
+      weightColorToSolve: {r: 0, g: 0, b: 0, a: 0}
