@@ -1,5 +1,7 @@
 # Seesaw Minigame
 
+![1](https://user-images.githubusercontent.com/37873121/194786564-2397b6bc-02ea-4225-a50d-1a96a4dd1217.png)
+
 This is a minigame where you have to balance a seesaw using some weights. The game always generate a new challenge to the player with some different weights.
 
 Read the GDD of the game here:
