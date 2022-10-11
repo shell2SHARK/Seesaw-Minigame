@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class Seesaw : MonoBehaviour
 {
     // Peso atual do lado do player
-    [SerializeField]
-    private float actualPlayerWeight = 0;
+    public int actualPlayerWeight = 0;
     // Peso total da fase
     [SerializeField]
     private int stageObjectWeight = 10;
@@ -37,6 +36,8 @@ public class Seesaw : MonoBehaviour
     public GameObject floorSpawner;
     [Header("Position to Start in X Axis:")]
     public float XpositionToStart = -1f;
+    [Header("HUD Slider:")]
+    public Slider weightMetricSlider;
 
     private void Start()
     {
@@ -51,6 +52,9 @@ public class Seesaw : MonoBehaviour
     private void Update()
     {
         StageController();
+        // Indica ao jogador o ponto de equilibrio da gangorra com o objeto Slider
+        weightMetricSlider.maxValue = stageObjectWeight;
+        weightMetricSlider.value = Mathf.Lerp(weightMetricSlider.value, actualPlayerWeight/2, 0.1f);
     }
 
     private void StageController()
@@ -65,7 +69,8 @@ public class Seesaw : MonoBehaviour
         // Instancia o peso principal na cena
         GameObject SolveWeight = Instantiate(weightPrefab, spawnRigth.transform.position, Quaternion.identity);
         Weight weightScript = SolveWeight.GetComponent<Weight>();
-        
+        DragScript dragScript = SolveWeight.GetComponent<DragScript>();
+
         // Define os valores do desafio para o peso da cena
         // O valor em Kilos recebido do Scriptable é convertido para uma escala de 0.1 até 0.9
         // Cada decimal representa um valor inteiro do peso (0.1 = 10kg, 0.2 = 20kg, etc)
@@ -73,6 +78,9 @@ public class Seesaw : MonoBehaviour
         weightScript.weightColor = stageObjectColor;
         weightScript.weightValueKG = (stageObjectWeight / 10f) / 10f;
         weightScript.ballSize = stageObjectSize;
+
+        // Desativa o script de drag para o player nao conseguir arrastar o peso do desafio
+        Destroy(dragScript);
     }
 
     private void SpawnWeightToPlayer()

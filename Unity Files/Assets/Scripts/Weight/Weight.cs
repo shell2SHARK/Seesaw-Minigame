@@ -24,7 +24,7 @@ public class Weight : MonoBehaviour
 
     private void Update()
     {
-        print(weightValueKG);
+       
     }
 
     private void FixedUpdate()

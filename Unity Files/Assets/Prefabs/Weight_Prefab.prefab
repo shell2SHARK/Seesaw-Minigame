@@ -267,9 +267,10 @@ GameObject:
   - component: {fileID: 4541019414992410408}
   - component: {fileID: 4541019414992410409}
   - component: {fileID: 4541019414992410407}
+  - component: {fileID: -132678497198711862}
   m_Layer: 0
   m_Name: Weight_Prefab
-  m_TagString: Untagged
+  m_TagString: Weight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -306,8 +307,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 1
+  m_Constraints: 48
+  m_CollisionDetection: 0
 --- !u!135 &4541019414992410409
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -338,6 +339,18 @@ MonoBehaviour:
   weightColor: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
   surfaceMaterial: {fileID: 5283481412283248471}
   weightText: {fileID: 473103471468639399}
+--- !u!114 &-132678497198711862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3769268477197946256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074ff2d79af41d5409820c52eb3b8d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5283481412283248471
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,28 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelValues:
   - playerWeightsAttributes:
-    - weightValueToPlayer: 32
+    - weightValueToPlayer: 35
       weightSizeToPlayer: 0.32
       weightColorToPlayer: {r: 1, g: 0.90592486, b: 0, a: 0}
     - weightValueToPlayer: 50
       weightSizeToPlayer: 0.635
       weightColorToPlayer: {r: 0.4433962, g: 0.20705765, b: 0.20705765, a: 0}
-    - weightValueToPlayer: 82
+    - weightValueToPlayer: 80
       weightSizeToPlayer: 0.82
       weightColorToPlayer: {r: 0.7592945, g: 0, b: 1, a: 0}
-    - weightValueToPlayer: 41
+    - weightValueToPlayer: 45
       weightSizeToPlayer: 0.517
       weightColorToPlayer: {r: 0.3388934, g: 0, b: 1, a: 0}
-    - weightValueToPlayer: 35
-      weightSizeToPlayer: 0.416
+    - weightValueToPlayer: 25
+      weightSizeToPlayer: 0.347
       weightColorToPlayer: {r: 0, g: 1, b: 0.54687, a: 0}
-    - weightValueToPlayer: 18
+    - weightValueToPlayer: 15
       weightSizeToPlayer: 0.301
       weightColorToPlayer: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 0}
     - weightValueToPlayer: 10
       weightSizeToPlayer: 0.2
       weightColorToPlayer: {r: 1, g: 0, b: 0, a: 0}
     stageWeightAttributes:
-      weightValueToSolve: 99
+      weightValueToSolve: 95
       weightSizeToSolve: 1
       weightColorToSolve: {r: 0, g: 0, b: 0, a: 0}
