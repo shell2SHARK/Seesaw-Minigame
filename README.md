@@ -9,7 +9,7 @@ Read the GDD of the game here:
 https://docs.google.com/document/d/1SbuSeaB1Qfyh4euOHdEJ7UyGt8XVraYqaVeLCP6_ADM/edit?usp=sharing
 
 ## Version
-1.1.0
+1.2.0
 
 ## How to Play
 - Just use the mouse to drag any weight to the seesaw;
@@ -17,9 +17,7 @@ https://docs.google.com/document/d/1SbuSeaB1Qfyh4euOHdEJ7UyGt8XVraYqaVeLCP6_ADM/
 - Balance the seesaw's weight on each stage.
 
 ## Changelog
-- Added the spawn weights system;
-
-- Polished the seesaw's physics.
+- Added drag system;
 
 ## Main Developer
 Lucas Mendes
