@@ -24,5 +24,8 @@ https://docs.google.com/document/d/1SbuSeaB1Qfyh4euOHdEJ7UyGt8XVraYqaVeLCP6_ADM/
 
 - All game working 100%.
 
+## Total Working Time
+26 hours
+
 ## Main Developer
 Lucas Mendes
