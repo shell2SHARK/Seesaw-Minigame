@@ -5,6 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Level Controller",menuName = "Educarte/Level Controller", order = 1)]
 public class LevelAttributes: ScriptableObject
 {
+    // Controla o nivel atual da fase
+    public int level = 1;
+    // Controla as chances atuais do jogador na fase
+    public int chances = 5;
+    // Controla quando o game começou
+    public bool gameStarted = false;
+
     [System.Serializable]
     public class PlayerWeightsValues
     {

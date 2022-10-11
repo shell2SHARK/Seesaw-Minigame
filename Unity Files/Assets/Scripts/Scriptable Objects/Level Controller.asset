@@ -12,30 +12,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a56fc79486a5a4fb9ba137b5f825fa, type: 3}
   m_Name: Level Controller
   m_EditorClassIdentifier: 
+  level: 0
+  chances: 5
+  gameStarted: 0
   levelValues:
   - playerWeightsAttributes:
-    - weightValueToPlayer: 35
-      weightSizeToPlayer: 0.32
-      weightColorToPlayer: {r: 1, g: 0.90592486, b: 0, a: 0}
-    - weightValueToPlayer: 50
-      weightSizeToPlayer: 0.635
-      weightColorToPlayer: {r: 0.4433962, g: 0.20705765, b: 0.20705765, a: 0}
-    - weightValueToPlayer: 80
-      weightSizeToPlayer: 0.82
-      weightColorToPlayer: {r: 0.7592945, g: 0, b: 1, a: 0}
-    - weightValueToPlayer: 45
-      weightSizeToPlayer: 0.517
-      weightColorToPlayer: {r: 0.3388934, g: 0, b: 1, a: 0}
-    - weightValueToPlayer: 25
-      weightSizeToPlayer: 0.347
-      weightColorToPlayer: {r: 0, g: 1, b: 0.54687, a: 0}
-    - weightValueToPlayer: 15
-      weightSizeToPlayer: 0.301
-      weightColorToPlayer: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 0}
     - weightValueToPlayer: 10
+      weightSizeToPlayer: 0.15
+      weightColorToPlayer: {r: 1, g: 0.90592486, b: 0, a: 0}
+    - weightValueToPlayer: 20
+      weightSizeToPlayer: 0.25
+      weightColorToPlayer: {r: 0.4433962, g: 0.20705765, b: 0.20705765, a: 0}
+    - weightValueToPlayer: 15
       weightSizeToPlayer: 0.2
-      weightColorToPlayer: {r: 1, g: 0, b: 0, a: 0}
+      weightColorToPlayer: {r: 0.7592945, g: 0, b: 1, a: 0}
+    stageWeightAttributes:
+      weightValueToSolve: 25
+      weightSizeToSolve: 0.25
+      weightColorToSolve: {r: 0, g: 0, b: 0, a: 0}
+  - playerWeightsAttributes:
+    - weightValueToPlayer: 25
+      weightSizeToPlayer: 0.25
+      weightColorToPlayer: {r: 0.7103927, g: 1, b: 0, a: 0}
+    - weightValueToPlayer: 20
+      weightSizeToPlayer: 0.2
+      weightColorToPlayer: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 0}
+    - weightValueToPlayer: 35
+      weightSizeToPlayer: 0.35
+      weightColorToPlayer: {r: 0.5849056, g: 0, b: 0.17274271, a: 0}
+    - weightValueToPlayer: 10
+      weightSizeToPlayer: 0.15
+      weightColorToPlayer: {r: 0, g: 0.40378928, b: 1, a: 0}
+    stageWeightAttributes:
+      weightValueToSolve: 45
+      weightSizeToSolve: 0.45
+      weightColorToSolve: {r: 0, g: 1, b: 0.80870605, a: 0}
+  - playerWeightsAttributes:
+    - weightValueToPlayer: 25
+      weightSizeToPlayer: 0.25
+      weightColorToPlayer: {r: 1, g: 0.5874088, b: 0, a: 0}
+    - weightValueToPlayer: 25
+      weightSizeToPlayer: 0.25
+      weightColorToPlayer: {r: 0, g: 1, b: 0.6701975, a: 0}
+    - weightValueToPlayer: 20
+      weightSizeToPlayer: 0.2
+      weightColorToPlayer: {r: 1, g: 0, b: 0.038758278, a: 0}
+    - weightValueToPlayer: 15
+      weightSizeToPlayer: 0.15
+      weightColorToPlayer: {r: 0, g: 0.39954376, b: 1, a: 0}
+    - weightValueToPlayer: 35
+      weightSizeToPlayer: 0.35
+      weightColorToPlayer: {r: 1, g: 0, b: 0.971643, a: 0}
+    stageWeightAttributes:
+      weightValueToSolve: 75
+      weightSizeToSolve: 0.75
+      weightColorToSolve: {r: 1, g: 0.8724341, b: 0, a: 0}
+  - playerWeightsAttributes:
+    - weightValueToPlayer: 20
+      weightSizeToPlayer: 0.2
+      weightColorToPlayer: {r: 0, g: 1, b: 0.8781085, a: 0}
+    - weightValueToPlayer: 70
+      weightSizeToPlayer: 0.7
+      weightColorToPlayer: {r: 0.85977244, g: 1, b: 0, a: 0}
+    - weightValueToPlayer: 65
+      weightSizeToPlayer: 0.65
+      weightColorToPlayer: {r: 0, g: 0.112698555, b: 1, a: 0}
+    - weightValueToPlayer: 45
+      weightSizeToPlayer: 0.45
+      weightColorToPlayer: {r: 1, g: 1, b: 1, a: 0}
+    - weightValueToPlayer: 85
+      weightSizeToPlayer: 0.85
+      weightColorToPlayer: {r: 0, g: 0, b: 0, a: 0}
+    - weightValueToPlayer: 90
+      weightSizeToPlayer: 0.9
+      weightColorToPlayer: {r: 1, g: 0, b: 0.42735004, a: 0}
+    - weightValueToPlayer: 10
+      weightSizeToPlayer: 0.15
+      weightColorToPlayer: {r: 0.5357933, g: 0, b: 1, a: 0}
+    - weightValueToPlayer: 40
+      weightSizeToPlayer: 0.4
+      weightColorToPlayer: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 0}
     stageWeightAttributes:
       weightValueToSolve: 95
-      weightSizeToSolve: 1
-      weightColorToSolve: {r: 0, g: 0, b: 0, a: 0}
+      weightSizeToSolve: 0.95
+      weightColorToSolve: {r: 0.32840872, g: 0.4345237, b: 0.5660378, a: 0}

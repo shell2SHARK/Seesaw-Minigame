@@ -14,6 +14,7 @@ public class DragScript : MonoBehaviour
     private Vector3 initialPos;
     // Controle de quando o peso esta dentro da gangorra ou nao
     private bool isInBucket;
+
     private Rigidbody rig;
 
     private void Start()
@@ -57,11 +58,14 @@ public class DragScript : MonoBehaviour
     {
         // Define a posicao do objeto para a do mouse
         transform.position = GetMouseAsWorldPoint() + mOffset;
+        // Zera a forca de movimento do peso 
         rig.velocity = Vector3.zero;
+        // Muda a layer de colisao e ignora a mesma com outros objetos
         gameObject.layer = 6;
         Physics.IgnoreLayerCollision(0, 6, true);
     }
 
+    // Metodo sem uso no momento
     private void RayWithMouse()
     {
         RaycastHit hit;
@@ -76,7 +80,7 @@ public class DragScript : MonoBehaviour
     private void RayWithObject()
     {
         // Cria o raycast a partir do objeto
-        // Se caso o raycast tocar no objeto Releaser, o peso muda para a posiçao da gangorra
+        // Se caso o raycast do peso tocar no objeto Releaser, o peso muda para a posiçao da gangorra
         RaycastHit hit;
 
         if(Physics.Raycast(transform.position,transform.forward * 10f,out hit))
@@ -97,7 +101,7 @@ public class DragScript : MonoBehaviour
             rig.freezeRotation = true;
             transform.rotation = Quaternion.identity;
 
-            // Diminui o peso da gangorra quando o peso for solto
+            // Diminui a variavel peso da gangorra quando o peso do jogador for solto
             if (isInBucket)
             {               
                 seesawScript.actualPlayerWeight -= Mathf.FloorToInt(weightScript.weightValueKG * 100f);
@@ -109,6 +113,7 @@ public class DragScript : MonoBehaviour
     private void OnMouseUp()
     {
         RayWithObject();
+        // Muda a layer de colisao e volta a colidir com outros objetos
         gameObject.layer = 0;
         Physics.IgnoreLayerCollision(0, 6, false);
     }

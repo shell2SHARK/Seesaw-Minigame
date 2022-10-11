@@ -22,11 +22,6 @@ public class Weight : MonoBehaviour
         rig = GetComponent<Rigidbody>();          
     }
 
-    private void Update()
-    {
-       
-    }
-
     private void FixedUpdate()
     {
         ChangeWeight();
